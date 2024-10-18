@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	
+	<style>
+		body {
+			font-family: Poppins, Roboto;
+			background-color: #003049;
+			color: #fdf0d5;
+			margin-left: 20%;
+			margin-right: 20%;
+
+		}
+
+		h1 {
+			font-family: "Playwrite CU", cursive;
+			color: #669bbc;
+			text-align: center;
+		}
+
+		hr {
+			border: 5px solid #780000;
+		}
+	
+		.info, 
+		.spots,
+		.like {
+			background-color: #669bbc;
+		}
+
+		input {
+			border-radius: 4px;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>Travel Registration</h1>
+	<hr />
+	<form>
+		<fieldset class="info">
+			<legend>Information</legend>
+			<label for="fname">First Name: </label>
+			<input type="text" id="fname" class="form-control" placeholder="Enter your first name here">
+
+			<br />
+
+			<label for="lname">Last Name: </label>
+			<input type="text" id="lname" class="form-control" placeholder="Enter your last name here">
+
+			<br />
+
+			<label for="email">Email address: </label>
+			<input type="text" id="email" class="form-control" placeholder="Enter email here">
+
+			<br />
+
+			<label for="uname">User Name: </label>
+			<input type="email" id="uname" class="form-control" placeholder="Enter user name here">
+
+			<br />
+
+			<label for="pcode">Password: </label>
+			<input type="password" id="pcode" class="form-control" placeholder="Enter passcode here">
+		</fieldset>
+
+		<br />
+
+		<fieldset class="spots">
+			<legend>Favorite Philippine Vacation Spots? </legend>
+				<input type="checkbox" id="spot1" class="form-control">
+				<label for="spot1">Baguio</label>
+				<br />
+				<input type="checkbox" id="spot2" class="form-control">
+				<label for="spot2">Boracay</label>
+				<br />
+				<input type="checkbox" id="spot3" class="form-control">
+				<label for="spot3">Siargao</label>
+		</fieldset>
+		
+		<br />
+
+		<fieldset class="like">
+			<legend>Are the information given accurate? </legend>
+				<input type="radio" id="yes" name="info" value="Yes">
+				<label for="like">Yes</label>
+				<input type="radio" id="no" name="info" value="No">
+				<label for="like">No</label>
+		</fieldset>
+		<br />
+		<input type="submit" value="Submit">
+  		<input type="reset" value="Reset">
+	</form>
+</body>
+</html>
